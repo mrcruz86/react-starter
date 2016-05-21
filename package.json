@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack-dev-server --hot",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --require ignore-styles --recursive",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
@@ -33,11 +33,13 @@
     "chai": "^3.5.0",
     "chai-immutable": "^1.5.4",
     "css-loader": "^0.23.1",
+    "ignore-styles": "^2.0.0",
     "jsdom": "^9.0.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.7.0",
     "react-addons-test-utils": "^15.0.2",
     "sass-loader": "^3.2.0",
+    "sinon": "^1.17.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"

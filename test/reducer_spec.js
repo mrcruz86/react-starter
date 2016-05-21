@@ -1,7 +1,7 @@
 import {List, Map, fromJS} from 'immutable';
 import {expect} from 'chai';
 
-import reducer from '../client/js/reducer';
+import reducer from '../app/reducer';
 
 describe('reducer', () => {
 
@@ -10,13 +10,13 @@ describe('reducer', () => {
     const action = {
       type: 'SET_STATE',
       state: Map({
-        name : 'Jason'
+        name : 'Hello World'
       })
     };
     const nextState = reducer(initialState, action);
 
     expect(nextState).to.equal(fromJS({
-      name : 'Jason'
+      name : 'Hello World'
     }));
   });
 
@@ -25,13 +25,13 @@ describe('reducer', () => {
     const action = {
       type: 'SET_STATE',
       state: {
-        name : 'Jason'
+        name : 'Hello World'
       }
     };
     const nextState = reducer(initialState, action);
 
     expect(nextState).to.equal(fromJS({
-      name : 'Jason'
+      name : 'Hello World'
     }));
   });
 
@@ -39,13 +39,13 @@ describe('reducer', () => {
     const action = {
       type: 'SET_STATE',
       state: {
-        name : 'Jason'
+        name : 'Hello World'
       }
     };
     const nextState = reducer(undefined, action);
 
     expect(nextState).to.equal(fromJS({
-      name : 'Jason'
+      name : 'Hello World'
     }));
   });
 
