@@ -1,6 +1,7 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 import * as actionCreators from './start_actions';
 
 import LogoHeaderMedium from '../../components/logo_header_medium/LogoHeaderMedium';
@@ -21,6 +22,7 @@ export const Start = React.createClass({
         <LogoHeaderMedium></LogoHeaderMedium>
         <h1>Welcome to {this.props.name}</h1>
         <input type='text' onChange={this.setAppName}/>
+        <Link class='btn' to='/signin'>Sign In</Link>
       </div>
     )
   }

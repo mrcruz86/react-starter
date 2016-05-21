@@ -7,8 +7,7 @@ export const Signin = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Signin</h1>
-        <p>Welcome to {this.props.name}</p>
+        <h1>Signin to {this.props.name}</h1>
       </div>
     )
   }

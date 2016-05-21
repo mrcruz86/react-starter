@@ -24,4 +24,22 @@
     align-self: center;
     text-align: center;
   }
+
+  .btn {
+    margin: 40px;
+    padding: 10px 40px;
+    font-size: 24px;
+    color: #efefef;
+    background-color: #3d3d3d;
+    align-self: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+  }
 }
